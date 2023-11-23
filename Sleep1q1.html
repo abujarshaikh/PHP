@@ -1,0 +1,167 @@
+<!-- @format -->
+<!-- Q.1) Write the HTML code for generating the form as shown below. Apply the internal CSS to
+following form to change the font size of the heading to 6pt and change the color to red and also
+change the background color to yellow. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep1 Q1 |ABUJAR</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        /* display: flex; */
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        margin: 40px;
+        margin-left: 634px;
+        margin-bottom: 0px;
+      }
+      .body {
+        /* background-color: #eceff1; */
+        /* background-size: 80px; */
+        background-color: hwb(197 25% 3%);
+        width: 600px;
+        height: 700px;
+        border: 2px solid black;
+        margin-left: 452px;
+        padding: 10px;
+        font-weight: bolder;
+        font-size: larger;
+      }
+      .name,
+      .teacher,
+      .sdate,
+      .edate,
+      .radio,
+      .desc {
+        color: #000;
+        padding: 10px;
+        margin: 20px;
+        font-size: larger;
+        font-style: Bold;
+      }
+      .name input {
+        padding: 10px;
+        margin-left: 20px;
+        width: 300px;
+      }
+      .teacher select {
+        padding: 10px;
+        margin-left: 20px;
+        width: 300px;
+        font-size: large;
+      }
+      .sdate input {
+        padding: 10px;
+        margin-left: 40px;
+        width: 300px;
+      }
+      .edate input {
+        padding: 10px;
+        margin-left: 40px;
+        width: 300px;
+      }
+      .radio input {
+        padding: 10px;
+        margin-left: 30px;
+        /* width: 250px; */
+      }
+      /* .desc input {
+        padding: 15px;
+        margin-left: 20px;
+      } */
+      /* .name input {
+        padding: 15px;
+        margin-left: 20px;
+        width: 250px;
+      } */
+      #submit {
+        margin-top: 20px;
+        margin-left: 150px;
+        margin-right: 20px;
+        padding: 20px;
+        background-color: green;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+        /* display: flex; */
+        flex-direction: column;
+        color: #f2f6fa;
+        width: 100px;
+        height: 30px;
+      }
+      #Clear {
+        margin-top: 20px;
+        margin-left: 100px;
+        margin-right: 20px;
+        padding: 20px;
+        background-color: rgb(49, 86, 232);
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+        /* display: flex; */
+        flex-direction: column;
+        color: #f2f6fa;
+        width: 100px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Project Management</h1>
+    <div class="body">
+      <div class="name">
+        <label for="ProjectName">Project Name:</label>
+        <input type="text" name="ProjectName" id="name" />
+      </div>
+      <div class="teacher">
+        <label for="Assigned To">Assigned To:</label>
+        <select name="teacher" id="teacher">
+          <option value="Sr.No.">Select Teacher</option>
+          <option value="1.">Prof.Burate Sir</option>
+          <option value="2.">Prof.Anarase Sir</option>
+          <option value="3.">Prof.Shinde Sir</option>
+          <option value="4.">Prof.Ms.Todmal Mam</option>
+          <option value="5.">Prof.Miss.Raut Mam</option>
+          <option value="6.">Prof.Ms.Parkale Mam</option>
+        </select>
+      </div>
+      <div class="sdate">
+        <label for="sdate">Start Date:</label>
+        <input type="date" name="sdate" id="sdate" />
+      </div>
+      <div class="edate">
+        <label for="edate">End Date:</label>
+        <input type="date" name="edate" id="edate" />
+      </div>
+      <div class="radio">
+        <label for="rbtn">Priority</label
+        ><input type="radio" name="rbtn" id="rbtn" />High<input
+          type="radio"
+          name="rbtn"
+          id="rbtn" />Average<input type="radio" name="rbtn" id="rbtn" />Low
+      </div>
+      <div class="desc">
+        <label for="Description">Description:</label>
+        <textarea
+          name="Description"
+          id="Description"
+          cols="70"
+          rows="10"></textarea>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+      <button type="submit" id="Clear">Clear</button>
+    </div>
+  </body>
+</html>
