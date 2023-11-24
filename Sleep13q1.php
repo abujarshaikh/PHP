@@ -16,8 +16,8 @@
         }
 
         table.chessboard td {
-            width: 17.5px;
-            height: 17.5px;
+            width: 23.75px;
+            height: 23.75px;
             text-align: center;
         }
 
